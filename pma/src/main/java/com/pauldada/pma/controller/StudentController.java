@@ -20,7 +20,7 @@ public class StudentController {
     public String displayStudentForm(Model model){
         Student aStudent=new Student();
         model.addAttribute("student",aStudent);
-        return "new-student";
+        return "students/new-student";
     }
 
     @PostMapping("/save")

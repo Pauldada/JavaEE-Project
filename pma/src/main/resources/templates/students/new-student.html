@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <nav th:replace="layouts::navbar"></nav>
+
     <div class="container">
         <form action="/students/save" th:object="${student}" method="POST">
             <input type="text" placeholder="姓名" th:field="${student.name}">
