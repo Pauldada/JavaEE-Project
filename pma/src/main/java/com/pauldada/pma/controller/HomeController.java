@@ -28,6 +28,15 @@ public class HomeController {
 
         List<Student> students = studentRepository.findAll();
         model.addAttribute("students",students);
-        return "main/home";
+        return "main/" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "home";
     }
 }

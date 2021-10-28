@@ -10,43 +10,44 @@
 <body>
 
     <nav th:replace="layouts::navbar"></nav>
-
-    <div>
-        <h4>当前项目</h4>
-        <table>
-            <thead>
+    <div class="container">
+        <div>
+            <h4>当前项目</h4>
+            <table>
+                <thead>
                 <tr>
                     <th>项目名称</th>
                     <th>项目状态</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr th:each="aProject : ${projects}">
                     <td th:text="${aProject.name}"></td>
                     <td th:text="${aProject.stage}"></td>
                 </tr>
-            </tbody>
-        </table>
-    </div>
-    <hr>
-    <div>
-        <h4>当前学生</h4>
-        <table>
-            <thead>
-            <tr>
-                <th>学生名称</th>
-                <th>学生微信</th>
-                <th>学生邮箱</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="aStudent : ${students}">
-                <td th:text="${aStudent.name}"></td>
-                <td th:text="${aStudent.wechatId}"></td>
-                <td th:text="${aStudent.email}"></td>
-            </tr>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <h4>当前学生</h4>
+            <table>
+                <thead>
+                <tr>
+                    <th>学生名称</th>
+                    <th>学生微信</th>
+                    <th>学生邮箱</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="aStudent : ${students}">
+                    <td th:text="${aStudent.name}"></td>
+                    <td th:text="${aStudent.wechatId}"></td>
+                    <td th:text="${aStudent.email}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
