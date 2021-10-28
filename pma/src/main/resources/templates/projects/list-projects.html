@@ -4,7 +4,6 @@
 <head th:replace="layouts :: header"></head>
 
 <body>
-
 <nav th:replace="layouts :: navbar"></nav>
 <div class="container">
     <h3>项目目录</h3>
@@ -20,10 +19,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="aProject : ${projects}">
-            <td th:each="${aProject.name}"></td>
-            <td th:each="${aProject.stage}"></td>
-        </tr>
+            <tr th:each="aProject : ${projects}">
+                <td th:each="${aProject.name}"></td>
+                <td th:each="${aProject.stage}"></td>
+            </tr>
         </tbody>
     </table>
 </div>
