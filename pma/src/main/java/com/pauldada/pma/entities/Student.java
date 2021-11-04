@@ -1,6 +1,7 @@
 package com.pauldada.pma.entities;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Student {
@@ -12,7 +13,7 @@ public class Student {
     private String wechatId;
     private String email;
 
-    @ManyToOne(
+    @ManyToMany(
             cascade = {
                 CascadeType.DETACH,
                 CascadeType.MERGE,
@@ -20,8 +21,12 @@ public class Student {
                 CascadeType.PERSIST},
             fetch = FetchType.LAZY
     )
-    @JoinColumn(name = "project_id")
-    private Project project;
+    @JoinTable(
+            name = "project_student",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "project_id")
+    )
+    private List<Project> projects;
 
     public Student(){
 
@@ -75,11 +80,11 @@ public class Student {
                 '}';
     }
 
-    public Project getProject() {
-        return project;
+    public List<Project> getProjects() {
+        return projects;
     }
 
-    public void setProject(Project project) {
-        this.project = project;
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
     }
 }

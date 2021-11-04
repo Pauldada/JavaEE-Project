@@ -43,12 +43,6 @@ public class ProjectController {
     @PostMapping("/save")
     public String createProject(Model model,@RequestParam List<Long> students, Project project){
         projectRepository.save(project);
-        Iterable<Student> chosenStudents = studentRepository.findAllById(students);
-
-        for (Student student : chosenStudents){
-            student.setProject(project);
-            studentRepository.save(student);
-        }
         return "redirect:/projects/new";
         //处理保存到数据库的行为
     }
