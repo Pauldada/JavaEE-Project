@@ -8,13 +8,17 @@
 
     <div class="container">
         <form action="/projects/save" th:object="${project}" method="POST">
-            <input type="text" placeholder="项目名称" th:field="${project.name}">
-            <select th:field="${project.stage}">
+            <input type="text" placeholder="项目名称" th:field="*{name}">
+            <select th:field="*{stage}">
                 <option value="未开始">未开始</option>
                 <option value="进行中">进行中</option>
                 <option value="已完成">已完成</option>
             </select>
-            <textarea type="text" placeholder="输入项目描述" th:field="${project.description}"></textarea>
+            <textarea type="text" placeholder="输入项目描述" th:field="*{description}"></textarea>
+            <select th:field="*{students}" multiple="multiple">
+                <option th:each="student : ${allStudents}" th:value="${student.studentId}" th:text="${student.name}"></option>
+
+            </select>
             <button type="submit">新建项目</button>
         </form>
     </div>

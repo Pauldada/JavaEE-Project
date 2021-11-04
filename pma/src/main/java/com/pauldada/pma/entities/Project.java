@@ -19,7 +19,7 @@ public class Project {
         this.description = description;
     }
 
-    @OneToMany(mappedBy = "theProject")
+    @OneToMany(mappedBy = "project")
     private List<Student> students;
 
     public long getProjectId() {
@@ -66,5 +66,13 @@ public class Project {
 
     public Project(){
 
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 }
