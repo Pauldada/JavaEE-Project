@@ -8,6 +8,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @SequenceGenerator(name = "project_seq",sequenceName = "project_seq",allocationSize = 1)
     private long studentId;
     private String name;
     private String wechatId;
