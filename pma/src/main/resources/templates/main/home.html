@@ -38,14 +38,14 @@
                 <tr>
                     <th>学生名称</th>
                     <th>学生微信</th>
-                    <th>学生邮箱</th>
+                    <th>项目个数</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="aStudent : ${students}">
+                <tr th:each="aStudent : ${studentProjects}">
                     <td th:text="${aStudent.name}"></td>
                     <td th:text="${aStudent.wechatId}"></td>
-                    <td th:text="${aStudent.email}"></td>
+                    <td th:text="${aStudent.projectCount}"></td>
                 </tr>
                 </tbody>
             </table>
