@@ -2,6 +2,7 @@ package com.pauldada.pma.controller;
 
 import com.pauldada.pma.dao.StudentRepository;
 import com.pauldada.pma.entities.Student;
+import com.pauldada.pma.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,11 +17,11 @@ import java.util.List;
 public class StudentController {
 
     @Autowired
-    StudentRepository studentRepository;
+    StudentService studentService;
 
     @GetMapping
     public String displayStudent(Model model){
-        List<Student> students = studentRepository.findAll();
+        List<Student> students = studentService.getAll();
         model.addAttribute("students",students);
         return "students/list-students";
     }
@@ -34,7 +35,7 @@ public class StudentController {
 
     @PostMapping("/save")
     public String createStudent(Model model,Student student){
-        studentRepository.save(student);
+        studentService.save(student);
         return "redirect:/students/new";
         //使用student crudRepository
     }
