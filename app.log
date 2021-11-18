@@ -358,3 +358,281 @@ Unconditional classes:
 
 
 
+2021-11-18 16:55:17.883  INFO 13132 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:55:18.085  WARN 13132 --- [Thread-12] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-11-18 16:55:18.130  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 13132 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:55:18.130 DEBUG 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:55:18.130  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:55:18.210  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:55:18.214  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:55:18.264  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:55:18.272  INFO 13132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 141 ms
+2021-11-18 16:55:18.279  INFO 13132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:55:18.313  INFO 13132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:55:18.354  WARN 13132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:55:18.366  INFO 13132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dfcd2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@138f541b, org.springframework.security.web.header.HeaderWriterFilter@7a611989, org.springframework.security.web.csrf.CsrfFilter@3191505c, org.springframework.security.web.authentication.logout.LogoutFilter@38ed047a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d65e229, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e1ebf81, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@615fe6b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5be6878b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29b9602f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@662cb922, org.springframework.security.web.session.SessionManagementFilter@2827f2f3, org.springframework.security.web.access.ExceptionTranslationFilter@4761e801, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65cc471c]
+2021-11-18 16:55:18.418  INFO 13132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:55:18.424  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:55:18.426  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 0.312 seconds (JVM running for 883.95)
+2021-11-18 16:55:18.427  INFO 13132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-18 16:55:36.018  INFO 13132 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:55:36.221  WARN 13132 --- [Thread-16] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-11-18 16:55:36.262  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 13132 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:55:36.262 DEBUG 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:55:36.262  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:55:36.329  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:55:36.344  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:55:36.391  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:55:36.407  INFO 13132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 145 ms
+2021-11-18 16:55:36.407  INFO 13132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:55:36.438  INFO 13132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:55:36.487  WARN 13132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:55:36.501  INFO 13132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d5530cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@11ab781f, org.springframework.security.web.header.HeaderWriterFilter@57f5f487, org.springframework.security.web.csrf.CsrfFilter@4a482d8c, org.springframework.security.web.authentication.logout.LogoutFilter@75c40023, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ab9d11f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4cfc420d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@49641af8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e7fb2bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76d62e3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c55e807, org.springframework.security.web.session.SessionManagementFilter@1a84128e, org.springframework.security.web.access.ExceptionTranslationFilter@2257b396, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@328eff4c]
+2021-11-18 16:55:36.552  INFO 13132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:55:36.558  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:55:36.561  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 0.314 seconds (JVM running for 902.084)
+2021-11-18 16:55:36.561  INFO 13132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-18 16:55:38.329  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 16:55:38.330  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-18 16:55:38.334 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:55:38.334 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:55:38.334 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:55:38.334 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:55:38.334 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:55:38.340 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:55:38.340 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:55:38.340 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:55:38.340 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:55:38.340 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:55:48.520 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:55:48.520 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:55:48.520 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:55:48.520 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:55:48.520 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:55:48.522 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:55:48.522 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:55:48.522 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:55:48.522 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:55:48.522 DEBUG 13132 --- [http-nio-8080-exec-9] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:00.881 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:00.881 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:00.881 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:56:00.881 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:00.882 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:00.883 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:00.883 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:00.883 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:56:00.883 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:00.883 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:09.512 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:09.512 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:09.512 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:56:09.512 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:09.512 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:09.514 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:09.514 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:09.514 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:56:09.514 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:09.514 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:16.672 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:16.672 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:16.672 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{}]
+2021-11-18 16:56:16.672 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:16.672 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:16.674 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:16.674 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:16.675 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{projects=[]}]
+2021-11-18 16:56:16.675 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:16.675 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:18.960 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:18.960 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:18.960 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{}]
+2021-11-18 16:56:18.960 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:18.960 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:18.961 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:18.961 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:18.961 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{projects=[]}]
+2021-11-18 16:56:18.961 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:18.961 DEBUG 13132 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:23.401 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:23.401 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:23.401 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:56:23.401 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:23.401 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:23.403 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:23.403 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:23.403 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:56:23.403 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:23.403 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:29.201 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:29.201 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:29.202 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:56:29.202 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:29.202 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:29.203 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:29.203 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:29.203 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:56:29.203 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:29.203 DEBUG 13132 --- [http-nio-8080-exec-8] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:31.999 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:31.999 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:31.999 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{}]
+2021-11-18 16:56:31.999 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:31.999 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:32.000 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:32.000 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:32.000 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{projects=[]}]
+2021-11-18 16:56:32.000 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:32.000 DEBUG 13132 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:32.551 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:32.551 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:32.551 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProjectForm(),输入参数[{}]
+2021-11-18 16:56:32.551 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:32.551 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:32.552 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:32.552 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:32.554 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProjectForm(),输入参数[{project=Project{projectId=0, name='null', stage='null', description='null'}, allStudents=[]}]
+2021-11-18 16:56:32.554 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:32.554 DEBUG 13132 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:33.833 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:33.833 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:56:33.833 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{}]
+2021-11-18 16:56:33.833 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:33.833 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:33.834 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:56:33.834 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:56:33.834 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.ProjectController,displayProject(),输入参数[{projects=[]}]
+2021-11-18 16:56:33.834 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:56:33.834 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
