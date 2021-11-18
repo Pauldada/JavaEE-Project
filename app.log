@@ -752,3 +752,476 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.12.jar:5.3.12]
 	... 21 common frames omitted
 
+2021-11-18 17:30:09.941  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 13132 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 17:30:09.941 DEBUG 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 17:30:09.941  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 17:30:10.024  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 17:30:10.030  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2021-11-18 17:30:10.081  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 17:30:10.088  INFO 13132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 145 ms
+2021-11-18 17:30:10.127  INFO 13132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2021-11-18 17:30:10.158 ERROR 13132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+2021-11-18 17:30:10.158  WARN 13132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+2021-11-18 17:30:10.162  INFO 13132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-18 17:30:10.164 ERROR 13132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.6.jar:2.5.6]
+	at com.pauldada.pma.PmaApplication.main(PmaApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.5.6.jar:2.5.6]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.12.jar:5.3.12]
+	... 21 common frames omitted
+
+2021-11-18 17:30:59.996  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 13132 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 17:30:59.996 DEBUG 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 17:30:59.996  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 17:31:00.074  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 17:31:00.079  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2021-11-18 17:31:00.132  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 17:31:00.139  INFO 13132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 142 ms
+2021-11-18 17:31:00.177  INFO 13132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2021-11-18 17:31:00.207 ERROR 13132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+2021-11-18 17:31:00.207  WARN 13132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+2021-11-18 17:31:00.211  INFO 13132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-18 17:31:00.213 ERROR 13132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.12.jar:5.3.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.6.jar:2.5.6]
+	at com.pauldada.pma.PmaApplication.main(PmaApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.5.6.jar:2.5.6]
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.pauldada.pma.entities.UserAccount
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.12.jar:5.3.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.12.jar:5.3.12]
+	... 21 common frames omitted
+
+2021-11-18 17:34:40.486  INFO 1856 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 1856 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 17:34:40.487 DEBUG 1856 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 17:34:40.487  INFO 1856 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 17:34:40.511  INFO 1856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-18 17:34:40.512  INFO 1856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-18 17:34:40.813  INFO 1856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 17:34:40.850  INFO 1856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2021-11-18 17:34:41.180  INFO 1856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 17:34:41.225  INFO 1856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 713 ms
+2021-11-18 17:34:41.326  INFO 1856 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2021-11-18 17:34:41.780  INFO 1856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 17:34:41.969  WARN 1856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 17:34:42.045  INFO 1856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10a01110, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e5cfb3d, org.springframework.security.web.header.HeaderWriterFilter@7e273db6, org.springframework.security.web.csrf.CsrfFilter@622a6d60, org.springframework.security.web.authentication.logout.LogoutFilter@5a7bf4f7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19815ee2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6df9425, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51549bfb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49c6343c, org.springframework.security.web.session.SessionManagementFilter@32ea70f5, org.springframework.security.web.access.ExceptionTranslationFilter@781f62a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56b00521]
+2021-11-18 17:34:42.217  INFO 1856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 17:34:42.238  INFO 1856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 17:34:42.245  INFO 1856 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.966 seconds (JVM running for 2.345)
+2021-11-18 17:34:43.591  INFO 1856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 17:34:43.592  INFO 1856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-18 17:34:43.612 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:34:43.612 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:34:43.613 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{}]
+2021-11-18 17:34:43.613 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:34:43.613 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:34:43.616 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:34:43.617 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:34:43.620 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{userAccount=UserAccount{userId=0, username='null', email='null', password='null', enabled=true}}]
+2021-11-18 17:34:43.620 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:34:43.620 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:30.755 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:30.755 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:36:30.755 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{}]
+2021-11-18 17:36:30.755 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:36:30.755 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:30.756 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:30.756 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:36:30.756 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{userAccount=UserAccount{userId=0, username='null', email='null', password='null', enabled=true}}]
+2021-11-18 17:36:30.756 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:36:30.756 DEBUG 1856 --- [http-nio-8080-exec-6] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:37.397 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:37.398 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:36:37.398 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,saveUser(),输入参数[{userAccount=UserAccount{userId=0, username='1', email='1@qq.com', password='1', enabled=true}, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, UserAccount{userId=0, username='1', email='1@qq.com', password='1', enabled=true}]
+2021-11-18 17:36:37.398 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:36:37.398 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:37.489 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:36:37.489 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:36:37.490 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,saveUser(),输入参数[{userAccount=UserAccount{userId=1, username='1', email='1@qq.com', password='$2a$10$uxkR5CrzdetVj3PdKFdhr.FhaArh/csWvQq5JzegFLCu799BcIZOG', enabled=true}, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, UserAccount{userId=1, username='1', email='1@qq.com', password='$2a$10$uxkR5CrzdetVj3PdKFdhr.FhaArh/csWvQq5JzegFLCu799BcIZOG', enabled=true}]
+2021-11-18 17:36:37.490 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:36:37.490 DEBUG 1856 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:15.786 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{}]
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{userAccount=UserAccount{userId=0, username='null', email='null', password='null', enabled=true}}]
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:37:15.787 DEBUG 1856 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:24.484 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:24.484 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:37:24.485 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,saveUser(),输入参数[{userAccount=UserAccount{userId=0, username='1', email='1@qq.com', password='1', enabled=true}, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, UserAccount{userId=0, username='1', email='1@qq.com', password='1', enabled=true}]
+2021-11-18 17:37:24.485 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:37:24.485 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:24.558 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:37:24.558 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:37:24.558 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,saveUser(),输入参数[{userAccount=UserAccount{userId=2, username='1', email='1@qq.com', password='$2a$10$klZvT2OfmUQfTu1XqsqoWevKIPUvO/MsUn0T2memwWqT1VKLcoKBG', enabled=true}, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, UserAccount{userId=2, username='1', email='1@qq.com', password='$2a$10$klZvT2OfmUQfTu1XqsqoWevKIPUvO/MsUn0T2memwWqT1VKLcoKBG', enabled=true}]
+2021-11-18 17:37:24.558 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:37:24.558 DEBUG 1856 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:42:42.172  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 6156 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 17:42:42.172 DEBUG 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 17:42:42.172  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 17:42:42.195  INFO 6156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-18 17:42:42.196  INFO 6156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-18 17:42:42.487  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 17:42:42.518  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2021-11-18 17:42:42.822  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 17:42:42.869  INFO 6156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 672 ms
+2021-11-18 17:42:42.981  INFO 6156 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2021-11-18 17:42:43.430  INFO 6156 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 17:42:43.606  WARN 6156 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 17:42:43.668  INFO 6156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2106253c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2665f47f, org.springframework.security.web.header.HeaderWriterFilter@28c7bdda, org.springframework.security.web.csrf.CsrfFilter@39cfc774, org.springframework.security.web.authentication.logout.LogoutFilter@5b5715f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@61625a74, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63067177, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@654b0145, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35273b61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c485b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56a92037, org.springframework.security.web.session.SessionManagementFilter@4278b420, org.springframework.security.web.access.ExceptionTranslationFilter@31ba05c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7cb8741f]
+2021-11-18 17:42:43.832  INFO 6156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 17:42:43.854  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 17:42:43.860  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.899 seconds (JVM running for 2.251)
+2021-11-18 17:42:54.047  INFO 6156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 17:42:54.048  INFO 6156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-18 17:42:54.065 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:42:54.065 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:42:54.066 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{}]
+2021-11-18 17:42:54.067 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:42:54.067 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:42:54.069 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:42:54.069 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:42:54.072 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,register(),输入参数[{userAccount=UserAccount{userId=0, username='null', email='null', password='null', enabled=true}}]
+2021-11-18 17:42:54.072 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:42:54.072 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:43:07.430 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:43:07.430 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:43:07.430 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,saveUser(),输入参数[{userAccount=UserAccount{userId=0, username='123', email='1@qq.com', password='123', enabled=true}, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, UserAccount{userId=0, username='123', email='1@qq.com', password='123', enabled=true}]
+2021-11-18 17:43:07.431 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:43:07.431 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:43:07.520 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:43:07.520 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:43:07.520 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.SecurityController,saveUser(),输入参数[{userAccount=UserAccount{userId=3, username='123', email='1@qq.com', password='$2a$10$vWCAoLuZ8Xo7L/xmwhXFKeTc2178Y62zu1HZYHozTB.8TjrCRBXM.', enabled=true}, org.springframework.validation.BindingResult.userAccount=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, UserAccount{userId=3, username='123', email='1@qq.com', password='$2a$10$vWCAoLuZ8Xo7L/xmwhXFKeTc2178Y62zu1HZYHozTB.8TjrCRBXM.', enabled=true}]
+2021-11-18 17:43:07.520 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:43:07.520 DEBUG 6156 --- [http-nio-8080-exec-3] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:43:13.111 ERROR 6156 --- [http-nio-8080-exec-6] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: PreparedStatementCallback; bad SQL grammar [SELECT username,password,enabled FROM users WHERE username = ?]; nested exception is org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+  位置：39
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.5.3.jar:5.5.3]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.5.3.jar:5.5.3]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.5.3.jar:5.5.3]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.5.3.jar:5.5.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT username,password,enabled FROM users WHERE username = ?]; nested exception is org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+  位置：39
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:815) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.loadUsersByUsername(JdbcUserDetailsManager.java:176) ~[spring-security-core-5.5.3.jar:5.5.3]
+	at org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl.loadUserByUsername(JdbcDaoImpl.java:182) ~[spring-security-core-5.5.3.jar:5.5.3]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.5.3.jar:5.5.3]
+	... 57 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+  位置：39
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2565) ~[postgresql-42.2.24.jar:42.2.24]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2297) ~[postgresql-42.2.24.jar:42.2.24]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322) ~[postgresql-42.2.24.jar:42.2.24]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481) ~[postgresql-42.2.24.jar:42.2.24]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401) ~[postgresql-42.2.24.jar:42.2.24]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164) ~[postgresql-42.2.24.jar:42.2.24]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:114) ~[postgresql-42.2.24.jar:42.2.24]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651) ~[spring-jdbc-5.3.12.jar:5.3.12]
+	... 64 common frames omitted
+
+2021-11-18 17:44:52.215  INFO 6156 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 17:44:52.268  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 6156 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 17:44:52.269 DEBUG 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 17:44:52.269  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 17:44:52.359  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 17:44:52.365  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2021-11-18 17:44:52.420  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 17:44:52.428  INFO 6156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 158 ms
+2021-11-18 17:44:52.468  INFO 6156 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2021-11-18 17:44:52.523  INFO 6156 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 17:44:52.575  WARN 6156 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 17:44:52.589  INFO 6156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40d4ba3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7560c00, org.springframework.security.web.header.HeaderWriterFilter@1171019b, org.springframework.security.web.csrf.CsrfFilter@1ab29def, org.springframework.security.web.authentication.logout.LogoutFilter@15d1cfd7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7847f5e2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@88f0cec, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6b88b162, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35e3e2dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c875023, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40a1a46a, org.springframework.security.web.session.SessionManagementFilter@985b53a, org.springframework.security.web.access.ExceptionTranslationFilter@5acd094e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27919273]
+2021-11-18 17:44:52.641  INFO 6156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 17:44:52.641  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 17:44:52.641  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 0.402 seconds (JVM running for 131.043)
+2021-11-18 17:44:52.641  INFO 6156 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-18 17:45:03.105  INFO 6156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 17:45:03.106  INFO 6156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-18 17:45:03.239 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:45:03.239 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:45:03.239 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 17:45:03.239 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:45:03.239 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:45:03.321 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:45:03.321 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:45:03.322 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=3.0.0, projects=[Project{projectId=1, name='1', stage='未开始', description=''}, Project{projectId=2, name='2', stage='进行中', description=''}, Project{projectId=3, name='3', stage='已完成', description=''}], projectStatusData=[{"value":1,"label":"进行中"},{"value":1,"label":"已完成"},{"value":1,"label":"未开始"}], studentProjects=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@42abf953, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2b5af707, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1f3fb690]}]
+2021-11-18 17:45:03.322 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:45:03.322 DEBUG 6156 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:49:20.983  INFO 6156 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 17:49:21.031  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 6156 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 17:49:21.031 DEBUG 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 17:49:21.031  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 17:49:21.114  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 17:49:21.120  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2021-11-18 17:49:21.169  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 17:49:21.176  INFO 6156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2021-11-18 17:49:21.215  INFO 6156 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pma-springbootdb'
+2021-11-18 17:49:21.265  INFO 6156 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 17:49:21.317  WARN 6156 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 17:49:21.329  INFO 6156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1da54027, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f77c121, org.springframework.security.web.header.HeaderWriterFilter@45483b63, org.springframework.security.web.csrf.CsrfFilter@7a2a5fca, org.springframework.security.web.authentication.logout.LogoutFilter@7b1a57e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d1e89c2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1115b253, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@70efb6c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a8623be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e9192ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bafb7d, org.springframework.security.web.session.SessionManagementFilter@470b0205, org.springframework.security.web.access.ExceptionTranslationFilter@4cc2b0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6bf3ea41]
+2021-11-18 17:49:21.383  INFO 6156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 17:49:21.389  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 17:49:21.392  INFO 6156 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 0.376 seconds (JVM running for 399.783)
+2021-11-18 17:49:21.393  INFO 6156 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-18 17:49:36.061  INFO 6156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 17:49:36.061  INFO 6156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-11-18 17:50:17.275 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:50:17.275 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 17:50:17.276 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 17:50:17.276 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:50:17.276 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:50:17.284 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 17:50:17.284 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 17:50:17.285 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=3.0.0, projects=[Project{projectId=1, name='1', stage='未开始', description=''}, Project{projectId=2, name='2', stage='进行中', description=''}, Project{projectId=3, name='3', stage='已完成', description=''}], projectStatusData=[{"value":1,"label":"进行中"},{"value":1,"label":"已完成"},{"value":1,"label":"未开始"}], studentProjects=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2f073bee, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@774aaba0, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@610436ec]}]
+2021-11-18 17:50:17.285 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 17:50:17.285 DEBUG 6156 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+

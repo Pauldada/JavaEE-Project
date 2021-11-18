@@ -45,7 +45,7 @@ public class ProjectController {
     @PostMapping("/save")
     public String createProject(Model model,@RequestParam List<Long> students, Project project){
         projectService.save(project);
-        return "redirect:/projects/new";
+        return "redirect:/projects";
         //处理保存到数据库的行为
     }
 

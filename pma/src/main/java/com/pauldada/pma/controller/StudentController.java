@@ -36,7 +36,7 @@ public class StudentController {
     @PostMapping("/save")
     public String createStudent(Model model,Student student){
         studentService.save(student);
-        return "redirect:/students/new";
+        return "redirect:/students";
         //使用student crudRepository
     }
 

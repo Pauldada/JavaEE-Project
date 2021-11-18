@@ -1,12 +1,15 @@
 package com.pauldada.pma.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "user_accounts")
 public class UserAccount {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "user_accounts_seq")
+    @SequenceGenerator(name = "user_accounts_seq",sequenceName = "user_accounts_seq",allocationSize = 1)
+    private long userId;
 
     @Column(name = "username")
     private String username;
@@ -23,8 +26,16 @@ public class UserAccount {
         this.enabled = enabled;
     }
 
-    public void UserAccount(){
+    public UserAccount() {
 
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -62,7 +73,8 @@ public class UserAccount {
     @Override
     public String toString() {
         return "UserAccount{" +
-                "username='" + username + '\'' +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
