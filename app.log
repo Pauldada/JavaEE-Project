@@ -37,3 +37,177 @@
 
 
 
+2021-11-18 16:15:55.559  INFO 2112 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 2112 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:15:55.559 DEBUG 2112 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:15:55.559  INFO 2112 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:15:55.590  INFO 2112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-18 16:15:55.590  INFO 2112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-18 16:15:55.884  INFO 2112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:15:55.900  INFO 2112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:15:56.212  INFO 2112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:15:56.263  INFO 2112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 673 ms
+2021-11-18 16:15:56.326  INFO 2112 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:15:56.783  INFO 2112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:15:56.955  WARN 2112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:15:57.111  INFO 2112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:15:57.153  INFO 2112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:15:57.153  INFO 2112 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.81 seconds (JVM running for 2.214)
+2021-11-18 16:16:51.718  INFO 2112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 16:16:51.719  INFO 2112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-11-18 16:16:51.731 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:51.731 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:16:51.732 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:16:51.733 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:16:51.733 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:51.802 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:51.802 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:16:51.802 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:16:51.802 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:16:51.802 DEBUG 2112 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:52.509 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:52.509 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:16:52.509 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:16:52.509 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:16:52.509 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:52.511 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:52.511 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:16:52.511 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:16:52.511 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:16:52.511 DEBUG 2112 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:53.180 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:53.180 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:16:53.180 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:16:53.180 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:16:53.180 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:53.181 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:16:53.182 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:16:53.182 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:16:53.182 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:16:53.182 DEBUG 2112 --- [http-nio-8080-exec-7] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:17:40.810  INFO 11596 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 11596 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:17:40.810 DEBUG 11596 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:17:40.810  INFO 11596 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:17:40.846  INFO 11596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-18 16:17:40.846  INFO 11596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-18 16:17:41.121  INFO 11596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:17:41.152  INFO 11596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:17:41.449  INFO 11596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:17:41.505  INFO 11596 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2021-11-18 16:17:41.568  INFO 11596 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:17:41.978  INFO 11596 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:17:42.154  WARN 11596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:17:42.311  INFO 11596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:17:42.327  INFO 11596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:17:42.343  INFO 11596 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.746 seconds (JVM running for 2.18)
+2021-11-18 16:21:55.070  INFO 3408 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 3408 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:21:55.071 DEBUG 3408 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:21:55.071  INFO 3408 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:21:55.096  INFO 3408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-18 16:21:55.096  INFO 3408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-18 16:21:55.392  INFO 3408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:21:55.416  INFO 3408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:21:55.726  INFO 3408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:21:55.777  INFO 3408 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 680 ms
+2021-11-18 16:21:55.840  INFO 3408 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:21:56.281  INFO 3408 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:21:56.449  WARN 3408 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:21:56.609  INFO 3408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:21:56.642  INFO 3408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:21:56.649  INFO 3408 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.79 seconds (JVM running for 2.151)
+2021-11-18 16:22:04.734  INFO 3408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 16:22:04.734  INFO 3408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-11-18 16:22:04.746 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:22:04.746 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:22:04.747 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:22:04.747 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:22:04.747 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:22:04.816 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:22:04.816 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:22:04.816 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:22:04.817 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:22:04.817 DEBUG 3408 --- [http-nio-8080-exec-1] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:22:05.068 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:22:05.068 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:22:05.068 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:22:05.069 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:22:05.069 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:22:05.070 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:22:05.070 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:22:05.070 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:22:05.070 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:22:05.070 DEBUG 3408 --- [http-nio-8080-exec-4] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:24:31.790  INFO 12244 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 12244 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:24:31.790 DEBUG 12244 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:24:31.791  INFO 12244 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:24:31.816  INFO 12244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-18 16:24:31.816  INFO 12244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-18 16:24:32.087  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:24:32.118  INFO 12244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:24:32.415  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:24:32.462  INFO 12244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2021-11-18 16:24:32.524  INFO 12244 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:24:32.991  INFO 12244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:24:33.162  WARN 12244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:24:33.328  INFO 12244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:24:33.358  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:24:33.365  INFO 12244 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.791 seconds (JVM running for 2.207)
