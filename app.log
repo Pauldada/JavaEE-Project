@@ -211,3 +211,150 @@
 2021-11-18 16:24:33.328  INFO 12244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2021-11-18 16:24:33.358  INFO 12244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2021-11-18 16:24:33.365  INFO 12244 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.791 seconds (JVM running for 2.207)
+2021-11-18 16:40:35.097  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 13132 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:40:35.098 DEBUG 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:40:35.098  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:40:35.122  INFO 13132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-18 16:40:35.123  INFO 13132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-18 16:40:35.425  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:40:35.449  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:40:35.770  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:40:35.816  INFO 13132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 693 ms
+2021-11-18 16:40:35.883  INFO 13132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:40:36.325  INFO 13132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:40:36.489  WARN 13132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:40:36.651  INFO 13132 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 25a1b94c-5707-4b2e-85fe-09276396c5ef
+
+2021-11-18 16:40:36.703  INFO 13132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c5a9f87, org.springframework.security.web.context.SecurityContextPersistenceFilter@70eb4542, org.springframework.security.web.header.HeaderWriterFilter@123585db, org.springframework.security.web.csrf.CsrfFilter@2c06d289, org.springframework.security.web.authentication.logout.LogoutFilter@7ff13365, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@787dd456, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@73f0325b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6433cda6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4232d1e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60bc6c0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e0d19f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@305aad03, org.springframework.security.web.session.SessionManagementFilter@747469de, org.springframework.security.web.access.ExceptionTranslationFilter@5b97858b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@557100af]
+2021-11-18 16:40:36.730  INFO 13132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:40:36.758  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:40:36.765  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 1.879 seconds (JVM running for 2.289)
+2021-11-18 16:40:49.882  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 16:40:49.882  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-11-18 16:41:06.181 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:41:06.181 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:41:06.182 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:41:06.182 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:41:06.183 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:41:06.252 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:41:06.252 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:41:06.252 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:41:06.252 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:41:06.252 DEBUG 13132 --- [http-nio-8080-exec-5] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:47:05.607  INFO 13132 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:47:05.826  WARN 13132 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-11-18 16:47:05.873  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 13132 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:47:05.873 DEBUG 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:47:05.873  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:47:05.961  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:47:05.963  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:47:06.010  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:47:06.025  INFO 13132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 152 ms
+2021-11-18 16:47:06.025  INFO 13132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:47:06.072  INFO 13132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:47:06.128  WARN 13132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:47:06.142  INFO 13132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78f8117f, org.springframework.security.web.context.SecurityContextPersistenceFilter@270364db, org.springframework.security.web.header.HeaderWriterFilter@23b55af2, org.springframework.security.web.csrf.CsrfFilter@4c77f312, org.springframework.security.web.authentication.logout.LogoutFilter@5ffa3593, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65604534, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@40b6ac5e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@66a9e99e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f397a82, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@627831d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b1395af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@187599a, org.springframework.security.web.session.SessionManagementFilter@541ff229, org.springframework.security.web.access.ExceptionTranslationFilter@55420f8c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@568908c6]
+2021-11-18 16:47:06.196  INFO 13132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:47:06.202  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:47:06.205  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 0.349 seconds (JVM running for 391.728)
+2021-11-18 16:47:06.208  INFO 13132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfiguration; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021-11-18 16:48:27.298  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 16:48:27.299  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-18 16:48:27.412  INFO 13132 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:48:27.613  WARN 13132 --- [Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-11-18 16:48:27.654  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Starting PmaApplication using Java 16.0.2 on D31 with PID 13132 (C:\Users\Administrator\Desktop\project\pma\target\classes started by Administrator in C:\Users\Administrator\Desktop\project)
+2021-11-18 16:48:27.654 DEBUG 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-18 16:48:27.654  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : The following profiles are active: dev
+2021-11-18 16:48:27.736  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-18 16:48:27.741  INFO 13132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2021-11-18 16:48:27.794  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-18 16:48:27.802  INFO 13132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 147 ms
+2021-11-18 16:48:27.810  INFO 13132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2021-11-18 16:48:27.847  INFO 13132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-18 16:48:27.892  WARN 13132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-18 16:48:27.904  INFO 13132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dfdd232, org.springframework.security.web.context.SecurityContextPersistenceFilter@2faef34b, org.springframework.security.web.header.HeaderWriterFilter@91785a7, org.springframework.security.web.csrf.CsrfFilter@422bb05e, org.springframework.security.web.authentication.logout.LogoutFilter@cef4341, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c14641d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@78f7f208, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9e40422, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6229cb8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d723559, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8fdb5ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@267fbd8f, org.springframework.security.web.session.SessionManagementFilter@30181c56, org.springframework.security.web.access.ExceptionTranslationFilter@18215dea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@230cea2d]
+2021-11-18 16:48:27.955  INFO 13132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-18 16:48:27.961  INFO 13132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-18 16:48:27.964  INFO 13132 --- [restartedMain] com.pauldada.pma.PmaApplication          : Started PmaApplication in 0.325 seconds (JVM running for 473.487)
+2021-11-18 16:48:27.965  INFO 13132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-18 16:48:37.786  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-18 16:48:37.786  INFO 13132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-11-18 16:48:37.790 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:48:37.790 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行前**********************
+2021-11-18 16:48:37.790 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{}]
+2021-11-18 16:48:37.790 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:48:37.790 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:48:37.795 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
+2021-11-18 16:48:37.795 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : **********************方法执行后**********************
+2021-11-18 16:48:37.795 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : com.pauldada.pma.controller.HomeController,displayHome(),输入参数[{versionNumber=dev, projects=[], projectStatusData=[], studentProjects=[]}]
+2021-11-18 16:48:37.795 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : ----------------------------------------------------
+2021-11-18 16:48:37.795 DEBUG 13132 --- [http-nio-8080-exec-2] c.p.pma.logging.ApplicationLoggerAspect  : 
+
+
+
